@@ -1,10 +1,10 @@
 /* Requirements */
 const Bandwidth  = require('node-bandwidth');
-const axios = require('axios');
 const express    = require('express');
 const bodyParser = require('body-parser');
 let app          = express();
 const http       = require('http').Server(app);
+const util       = require('util')
 
 /* Config variables */
 const {creds} = require('./config.js');
@@ -44,9 +44,8 @@ const replyToMessage = async message => {
 const MESSAGE = '/messages';
 
 /* Event Handlers */
-const handleMessage = async (req, res) => {
-    console.log(req.body);
-    /* Async doesn't need to reply here */
+const handleMessage = (req, res) => {
+    console.log(util.inspect(req.body, false, null))
     res.sendStatus(200);
     const message = req.body[0];
     if (message.message.direction === 'in'){
