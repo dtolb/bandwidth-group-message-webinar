@@ -1,15 +1,27 @@
 /* Requirements */
 const Bandwidth  = require('node-bandwidth');
+const axios = require('axios');
 const express    = require('express');
 const bodyParser = require('body-parser');
 let app          = express();
 const http       = require('http').Server(app);
 
 /* Config variables */
-const {creds} = require('./config.js');
+const {userId, apiToken, apiSecret} = require('./config.js');
 
 /* new SDK */
-const bw = new Bandwidth(creds);
+let messagingAPI = axios.create({
+    baseURL: `https://api.catapult.inetwork.com/v2/users/${userId}/messages`,
+    auth: {
+        username: apiToken,
+        password: apiSecret
+    }
+});
+
+/* Send Message Method */
+const sendMessage = async (messageContents) => {
+    return (await messagingAPI.post('', messageContents)).data
+}
 
 /* Paths */
 const MESSAGE = '/messages';
