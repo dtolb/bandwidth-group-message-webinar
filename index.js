@@ -50,6 +50,7 @@ const handleMessage = async (req, res) => {
     res.sendStatus(200);
     const message = req.body[0];
     if (message.message.direction === 'in'){
+        console.log('Incoming message!');
         try {
             await replyToMessage(message);
         }
