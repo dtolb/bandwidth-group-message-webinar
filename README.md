@@ -27,7 +27,7 @@ Basic Group Messaging Flow for use with Bandwidth APIs
 | `BANDWIDTH_API_SECRET`   | [Bandwidth API Secret](http://dev.bandwidth.com/security.html)                                                            | `asdfkljasd2305jsdlkf` |
 
 
-👉 👉 You can also set all these in [`config.js`](https://github.com/dtolb/bandwidth-click-to-call/blob/master/config.js) 👈 👈
+👉 👉 You can also set all these in [`config.js`](config.js) 👈 👈
 
 ```js
 module.exports = {
