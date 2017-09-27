@@ -22,7 +22,7 @@ Basic Group Messaging Flow for use with Bandwidth APIs
 
 | Environment Variable     | Description                                                                                                               | Example                |
 |:-------------------------|:--------------------------------------------------------------------------------------------------------------------------|:-----------------------|
-| `BANDWIDTH_USER_ID`      | [Bandwidth USER Id](http://dev.bandwidth.com/security.html)                                                               | `u-123sdaf9834sd`      |
+| `BANDWIDTH_USER_ID`      | [Bandwidth User Id](http://dev.bandwidth.com/security.html)                                                               | `u-123sdaf9834sd`      |
 | `BANDWIDTH_API_TOKEN`    | [Bandwidth API Token](http://dev.bandwidth.com/security.html)                                                             | `t-asdg920358askdf`    |
 | `BANDWIDTH_API_SECRET`   | [Bandwidth API Secret](http://dev.bandwidth.com/security.html)                                                            | `asdfkljasd2305jsdlkf` |
 
