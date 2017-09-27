@@ -7,21 +7,10 @@ let app          = express();
 const http       = require('http').Server(app);
 
 /* Config variables */
-const {userId, apiToken, apiSecret} = require('./config.js');
+const {creds} = require('./config.js');
 
 /* new SDK */
-let messagingAPI = axios.create({
-    baseURL: `https://api.catapult.inetwork.com/v2/users/${userId}/messages`,
-    auth: {
-        username: apiToken,
-        password: apiSecret
-    }
-});
-
-/* Send Message Method */
-const sendMessage = async (messageContents) => {
-    return (await messagingAPI.post('', messageContents)).data
-}
+const bandwidth = new Bandwidth(creds);
 
 /* Paths */
 const MESSAGE = '/messages';
