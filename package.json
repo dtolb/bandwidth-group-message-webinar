@@ -29,7 +29,7 @@
     "axios": "^0.16.2",
     "body-parser": "^1.18.2",
     "express": "^4.15.5",
-    "node-bandwidth": "^2.4.0",
+    "node-bandwidth": "dtolb/node-bandwidth#v2_messaging",
     "nodemon": "^1.12.1"
   }
 }
