@@ -32,18 +32,12 @@ const handleMessage = (req, res) => {
     res.sendStatus(200);
 };
 
-const handleStatusUpdates = (req, res) => {
-    console.log(req.body);
-    res.sendStatus(200);
-}
-
-
 /* Express Setup */
 app.use(bodyParser.json());
 app.set('port', (process.env.PORT || 3000));
 
 app.get('/', (req, res) => {res.send("Hello World")})
-app.get(MESSAGE, handleMessage);
+app.post(MESSAGE, handleMessage);
 
 /* Launch the Server */
 http.listen(app.get('port'), function(){

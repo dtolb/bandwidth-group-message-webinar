@@ -4,7 +4,8 @@
   "description": "bandwidth group-messaging sms communications auto-reply",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "axios": "^0.16.2",
     "body-parser": "^1.18.2",
     "express": "^4.15.5",
-    "node-bandwidth": "^2.4.0"
+    "node-bandwidth": "^2.4.0",
+    "nodemon": "^1.12.1"
   }
 }

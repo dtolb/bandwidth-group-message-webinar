@@ -3,7 +3,3 @@ module.exports = {
     apiToken  : process.env.BANDWIDTH_API_TOKEN,
     apiSecret : process.env.BANDWIDTH_API_SECRET
 }
-
-userId
-apiToken
-apiSecret
