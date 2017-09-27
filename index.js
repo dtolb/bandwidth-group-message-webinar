@@ -1,10 +1,10 @@
 /* Requirements */
 const Bandwidth  = require('node-bandwidth');
-const axios = require('axios');
 const express    = require('express');
 const bodyParser = require('body-parser');
 let app          = express();
 const http       = require('http').Server(app);
+const util       = require('util')
 
 /* Config variables */
 const {creds} = require('./config.js');
@@ -17,7 +17,7 @@ const MESSAGE = '/messages';
 
 /* Event Handlers */
 const handleMessage = (req, res) => {
-    console.log(req.body);
+    console.log(util.inspect(req.body, false, null))
     res.sendStatus(200);
 };
 
