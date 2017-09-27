@@ -1,0 +1,32 @@
+{
+  "name": "bandwidth-group-message-webinar",
+  "version": "1.0.0",
+  "description": "bandwidth group-messaging sms communications auto-reply",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtolb/bandwidth-group-message-webinar.git"
+  },
+  "keywords": [
+    "bandwidth",
+    "group-mesasging",
+    "sms",
+    "cpaas",
+    "communications",
+    "auto-reply"
+  ],
+  "author": "Dan Tolbert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dtolb/bandwidth-group-message-webinar/issues"
+  },
+  "homepage": "https://github.com/dtolb/bandwidth-group-message-webinar#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "node-bandwidth": "^2.4.0"
+  }
+}
